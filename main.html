@@ -1,1 +1,11 @@
-hello world from pages
+<input id="inp"  type="text" placeholder="https://marketplace.visualstudio.com/items?itemName=ms-python.python">
+<button id="btn">Получить vsix</button>
+
+<script>
+  document.getElementById("a").addEventListener("click", (e)=>{
+    let url = document.getElementById("inp").value
+    let name = url.split("?itemName=")[1]
+    let data = name..replace(".", "/vsextensions/")
+    window.open(`https://marketplace.visualstudio.com/_apis/public/gallery/publishers/${data}/latest/vspackage`, "_blank");
+  })
+</script>
