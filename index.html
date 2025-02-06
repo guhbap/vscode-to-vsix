@@ -2,7 +2,7 @@
 <button id="btn">Получить vsix</button>
 
 <script>
-  document.getElementById("a").addEventListener("click", (e)=>{
+  document.getElementById("btn").addEventListener("click", (e)=>{
     let url = document.getElementById("inp").value
     let name = url.split("?itemName=")[1]
     let data = name.replace(".", "/vsextensions/")
